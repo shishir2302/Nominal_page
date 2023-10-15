@@ -1,0 +1,72 @@
+*{
+    margin: 0;padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    color: green;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    cursor: pointer;
+
+}
+
+
+
+.container{
+    background-color: goldenrod;
+   
+}
+.img{
+    display: flex;
+    justify-content: center;
+    box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
+                  inset 4px 4px 10px rgba(0,0,0,0.5),
+                  inset -4px -4px 10px rgba(67,67,67,0.5),
+                  4px 4px 10px rgba(0,0,0,0.3);              
+}
+img{
+    width: 700px;
+    height: 350px;
+    animation-duration: 4s;
+  animation-name: zoomin;
+}
+
+
+@keyframes zoomin {
+    0%{
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+
+    100%{
+        width: 700px;
+        height: 350px;
+        opacity: 1;
+    }
+    
+}
+
+.box{
+    padding-left: 310px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+p{
+    background-color: #FFAE42;
+    width: 55vw;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 35px;
+    transition: font-size 1.4s;
+}
+
+p:hover{
+    font-size: 28px;
+    transform: scale(1.2);
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
